@@ -1,4 +1,5 @@
 修改NetUtil.java里的apiKey和secret两个变量，
 改成你自己在豆瓣网上申请的，否则无法登陆。
 
-有问题请到http://chenyc.info/mydouban/这里留言。
+有问题请到这里留言
+http://chenyc.info/mydouban/
