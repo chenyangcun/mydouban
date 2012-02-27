@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:gravity="center_vertical"
+	android:orientation="vertical" android:id="@+id/list_item_layout"
+	android:background="@drawable/category_selector" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<TextView android:textColor="@color/black" android:textSize="20dp"
+		android:id="@+id/review_title" android:textStyle="bold"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+	<TextView android:textColor="@color/black" android:textSize="15dp"
+		android:id="@+id/subject_title" android:textStyle="bold"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+	<LinearLayout android:orientation="horizontal"
+		android:paddingTop="5dip" android:paddingBottom="5dip"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<TextView android:textColor="@color/black" android:textSize="15dp"
+			android:paddingRight="10dip" android:maxHeight="30dip" android:id="@+id/author_name"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<RatingBar android:id="@+id/ratingbar" style="?android:attr/ratingBarStyleSmall"
+			android:layout_width="wrap_content" android:stepSize="0.5"
+			android:isIndicator="true" android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical" android:numStars="5" />
+	</LinearLayout>
+
+	<TextView android:id="@+id/review_summary" android:textColor="@color/black"
+		android:textSize="17dp" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	</TextView>
+
+</LinearLayout>

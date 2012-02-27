@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  >
+  
+  <LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="40dip"
+  android:orientation="horizontal"
+  >
+<TextView 
+android:text="" 
+android:id="@+id/miniblog_name" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:gravity="left"
+android:textColor="@color/purple_start"
+>
+</TextView>
+
+<TextView 
+android:text="" 
+android:id="@+id/miniblog_time" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+android:gravity="right"
+>
+</TextView>
+
+</LinearLayout>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  >
+  
+ <TextView 
+android:text="" 
+android:id="@+id/miniblog_summary" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+android:visibility="visible"
+android:textColor="@color/black"
+>
+</TextView>
+ 
+<TextView 
+android:text="sdfsdf" 
+android:id="@+id/miniblog_content" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+android:textSize="18dp"
+android:visibility="gone"
+android:textColor="@color/black"
+>
+</TextView>
+ </LinearLayout>
+
+</LinearLayout>

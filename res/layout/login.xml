@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scroll_login" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:scrollbars="vertical"
+	android:background="#FFF5F5F5">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:paddingLeft="10dip" android:paddingRight="10dip" android:id="@+id/inner_login"
+		android:paddingBottom="10dip" android:background="#FFF5F5F5">
+
+		<ImageView android:id="@+id/doubanLogo" android:paddingTop="10dip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:paddingLeft="20dip"
+			android:paddingBottom="10dip" android:paddingRight="20dip"
+			android:src="@drawable/douban_logo" android:scaleType="centerInside">
+		</ImageView>
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:paddingTop="5dip" android:layout_below="@id/doubanLogo"
+			android:layout_height="fill_parent" android:background="@drawable/content_bg"
+			android:id="@+id/section1">
+
+			<TextView android:id="@+id/l_section1" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/user_login" />
+
+			<RelativeLayout android:layout_width="wrap_content"
+				android:layout_below="@id/l_section1" android:layout_height="wrap_content"
+				android:id="@+id/wrapper">
+
+				<EditText android:text="" android:id="@+id/EditTextEmail"
+					android:hint="@string/email" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:minHeight="40dip"
+					android:background="@android:drawable/editbox_background"
+					android:layout_below="@id/wrapper"></EditText>
+
+
+				<EditText android:text="" android:id="@+id/EditTextPassword"
+					android:hint="@string/password" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:minHeight="40dip"
+					android:password="true" android:layout_below="@id/EditTextEmail"></EditText>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:id="@+id/Captcha" android:gravity="center" android:visibility="gone"
+					android:layout_height="wrap_content" android:layout_below="@id/EditTextPassword">
+					<EditText android:text="" android:id="@+id/EditTextCaptchaValue"
+						android:hint="@string/captcha" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:minHeight="40dip"
+						android:layout_weight="1.0"></EditText>
+
+					<ImageView android:id="@+id/ImageViewCaptcha" android:adjustViewBounds="false" 
+						android:scaleType="fitXY" android:layout_below="@id/EditTextCaptchaValue"
+						android:layout_width="120dip" android:layout_height="30dip" />
+				</LinearLayout>
+
+ 
+				<LinearLayout android:layout_width="fill_parent"
+					android:gravity="center" android:paddingTop="30dip"
+					android:paddingBottom="30dip" android:layout_height="wrap_content"
+					android:layout_below="@id/Captcha">
+					<Button android:text="@string/btnLogin" android:id="@+id/btnLogin"
+						android:width="100dp" android:layout_width="wrap_content"
+						android:background="@drawable/wp_button_small"
+						android:layout_height="wrap_content"></Button>
+						
+					<Button android:text="@string/btnExit" android:id="@+id/btnExit"
+						android:width="100dp" android:layout_width="wrap_content"
+						android:background="@drawable/wp_button_small"
+						android:layout_height="wrap_content"></Button>
+<!-- 
+					<Button android:text="@string/btnGetCaptcha" android:id="@+id/btnGetCaptcha"
+						android:background="@drawable/wp_button_small" android:width="100dp"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+						 -->
+				</LinearLayout>
+			</RelativeLayout>
+		</RelativeLayout>
+	</RelativeLayout>
+</ScrollView>

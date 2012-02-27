@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:gravity="center_vertical"
+		android:orientation="horizontal" android:id="@+id/title_bar"
+		android:background="@drawable/title_bg_night" android:layout_width="fill_parent"
+		android:layout_height="35.0dip">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/app_icon" />
+		<LinearLayout android:gravity="center_vertical"
+			android:layout_width="0.0dip" android:layout_height="wrap_content"
+			android:layout_weight="1.0">
+			<TextView android:textSize="16.0sp" android:textColor="@color/titletextcolor"
+				android:id="@+id/myTitle" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="5.0dip"
+				android:text="@string/app_name" />
+			<ProgressBar android:layout_gravity="center_vertical"
+				android:id="@+id/titleProcessIndictor" android:visibility="invisible"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="5.0dip" style="?android:progressBarStyleSmall" />
+		</LinearLayout>
+
+		<ImageButton android:id="@+id/prev_button"
+			android:layout_gravity="center" android:background="@color/transparent"
+			android:layout_width="50.0dip" android:layout_height="29.0dip"
+			android:layout_marginRight="5.0dip" android:src="@drawable/prev" />
+		<ImageButton android:id="@+id/next_button"
+			android:layout_gravity="center" android:background="@color/transparent"
+			android:layout_width="50.0dip" android:layout_height="29.0dip"
+			android:layout_marginRight="5.0dip" android:src="@drawable/next" />
+		<ImageButton android:id="@+id/back_button"
+			android:layout_gravity="center" android:background="@color/transparent"
+			android:layout_width="60.0dip" android:layout_height="29.0dip"
+			android:layout_marginRight="5.0dip" android:src="@drawable/back_night_selector" />
+	</LinearLayout>
+</merge>

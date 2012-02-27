@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:orientation="vertical"
+	android:paddingTop="10dp" android:layout_width="wrap_content">
+
+	<ImageView android:layout_height="45dp" android:layout_width="45dp"
+		android:background="#00000000" android:layout_gravity="center"
+		android:id="@+id/group_image">
+	</ImageView>
+
+	<TextView android:layout_width="wrap_content" android:gravity="center"
+		android:layout_gravity="center" android:textSize="20dp"
+		android:layout_below="@+id/group_image" android:layout_height="wrap_content"
+		android:text="" android:id="@+id/group_item" android:textColor="@color/black">
+	</TextView>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:background="@color/grey_start" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="horizontal">
+		<TextView android:id="@+id/topicview_author"
+			android:textSize="18dp" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textColor="@color/purple_start" android:text="">
+		</TextView>
+
+		<!-- <TextView android:id="@+id/topicview_time" android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" android:gravity="center" android:textColor="@color/blue_start" 
+			android:text="" > </TextView> -->
+
+		<TextView android:id="@+id/topicview_time" android:textSize="12dp"
+			android:textColor="@color/purple_start" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="right"
+			android:text="">
+		</TextView>
+	</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView android:id="@+id/topicview_content"
+			android:textSize="20dp" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textColor="@color/black"
+			android:text="">
+		</TextView>
+	</LinearLayout>
+
+</LinearLayout>

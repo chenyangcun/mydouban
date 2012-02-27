@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:background="#FFF5F5F5"
+	android:orientation="vertical" android:layout_height="fill_parent">
+	<include layout="@layout/titlebar3" />
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/subject_view" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:scrollbars="none"
+		android:layout_weight="1.0" android:padding="10dip"
+		android:background="#FFF5F5F5">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:paddingTop="5dip" android:layout_height="fill_parent"
+			android:background="@drawable/content_bg" android:id="@+id/section1">
+			<TextView android:id="@+id/txtInfo" android:layout_width="fill_parent"
+				android:text="@string/bookInfo" android:layout_height="wrap_content" />
+
+			<RelativeLayout android:layout_width="wrap_content"
+				android:paddingTop="10dip" android:layout_below="@id/txtInfo"
+				android:layout_height="wrap_content" android:id="@+id/wrapper">
+
+				<LinearLayout android:orientation="horizontal"
+					android:id="@+id/wrapper" android:layout_height="fill_parent"
+					android:layout_width="fill_parent">
+					<ImageView android:id="@+id/book_img"
+						android:layout_width="100dip" android:layout_height="140dip" />
+
+					<LinearLayout android:orientation="vertical"
+						android:paddingLeft="15dip" android:layout_height="wrap_content"
+						android:layout_width="fill_parent">
+
+						<TextView android:id="@+id/book_title"
+							android:layout_width="fill_parent" android:textColor="@color/black"
+							android:textSize="25dp" android:paddingTop="5dip"
+							android:textStyle="bold" android:layout_height="wrap_content" />
+
+						<TextView android:id="@+id/book_description"
+							android:paddingTop="10dip" android:layout_width="fill_parent"
+							android:textColor="@color/black" android:textSize="15dp"
+							android:layout_height="wrap_content" />
+
+
+						<LinearLayout android:orientation="horizontal"
+							android:paddingTop="5dip" android:layout_height="wrap_content"
+							android:layout_width="fill_parent">
+
+							<TextView android:id="@+id/book_status"
+								android:layout_width="wrap_content" android:textColor="#00f"
+								android:textSize="18sp" android:paddingRight="10dip"
+								android:visibility="gone" android:textStyle="bold" 
+								android:layout_height="wrap_content" />
+
+							<RatingBar android:paddingTop="10dip" android:id="@+id/ratingbar"
+								android:visibility="invisible" style="?android:attr/ratingBarStyleSmall"
+								android:layout_width="wrap_content" android:stepSize="0.5"
+								android:isIndicator="true" android:layout_height="wrap_content"
+								android:numStars="5" />
+						</LinearLayout>
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<Button android:text="@string/btnShowComment" android:id="@+id/btnShowComment1"
+					android:layout_marginTop="5dip" android:visibility="invisible"
+					android:layout_below="@id/wrapper" android:textSize="18dp"
+					android:layout_centerHorizontal="true" android:background="@drawable/wp_button"
+					android:width="150dip" android:layout_width="wrap_content"
+					android:layout_height="wrap_content"></Button>
+
+				<TextView android:id="@+id/book_summary"
+					android:paddingTop="10dip" android:layout_below="@id/btnShowComment1"
+					android:layout_width="fill_parent" android:textColor="@color/black"
+					android:textSize="18dp" android:paddingBottom="10dip"
+					android:layout_height="fill_parent" />
+
+				<Button android:text="@string/btnShowComment" android:id="@+id/btnShowComment2"
+					android:visibility="invisible" android:layout_below="@id/book_summary"
+					android:textSize="18dp" android:layout_centerHorizontal="true"
+					android:background="@drawable/wp_button" android:width="150dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			</RelativeLayout>
+		</RelativeLayout>
+	</ScrollView>
+
+	<LinearLayout style="@android:style/ButtonBar"
+		android:layout_gravity="bottom" android:orientation="horizontal"
+		android:id="@+id/book_toolbar" android:layout_width="fill_parent"
+		android:visibility="gone" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+		<Button android:id="@+id/btn_book_new_review" android:text="@string/new_review"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<Button android:id="@+id/btn_book_wish" android:text="@string/book_wish"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<Button android:id="@+id/btn_book_reading" android:text="@string/book_reading"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<Button android:id="@+id/btn_book_read" android:text="@string/book_read"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+	</LinearLayout>
+
+	<LinearLayout style="@android:style/ButtonBar"
+		android:visibility="gone" android:layout_gravity="bottom"
+		android:orientation="horizontal" android:id="@+id/music_toolbar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+		<Button android:id="@+id/btn_music_new_review" android:text="@string/new_review"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<Button android:id="@+id/btn_music_wish" android:text="@string/music_wish"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<Button android:id="@+id/btn_music_listening" android:text="@string/music_listening"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<Button android:id="@+id/btn_music_listened" android:text="@string/music_listened"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+	</LinearLayout>
+
+	<LinearLayout style="@android:style/ButtonBar"
+		android:visibility="gone" android:layout_gravity="bottom"
+		android:orientation="horizontal" android:id="@+id/movie_toolbar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+		<Button android:id="@+id/btn_movie_new_review" android:text="@string/new_review"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<Button android:id="@+id/btn_movie_wish" android:text="@string/movie_wish"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<Button android:id="@+id/btn_movie_watched" android:text="@string/movie_watched"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.chenyc.douban" android:versionCode="1"
+	android:versionName="1.0.1">
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<application android:icon="@drawable/app_icon"
+		android:label="@string/app_name">
+		<activity android:name=".MeActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+		<activity android:name=".MainTabActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+		<activity android:name=".LoginActivity" android:label="@string/app_name"
+			android:windowSoftInputMode="stateVisible|adjustResize"
+			android:theme="@style/activityTitlebar" android:configChanges="orientation|keyboardHidden">
+		</activity>
+		<activity android:name=".HomeActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+		<activity android:name=".NoteActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+		<activity android:name=".SearchActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+		<activity android:name=".FavActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".NoteViewActivity" android:label="@string/app_name"
+			android:theme="@style/activityTitlebar" android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".NoteEditActivity" android:label="@string/app_name"
+			android:windowSoftInputMode="stateVisible|adjustResize"
+			android:theme="@style/activityTitlebar" android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".ReviewActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+
+		<activity android:name=".SubjectViewActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".ReviewViewActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".ReviewEditActivity" android:label="@string/app_name"
+			android:windowSoftInputMode="stateVisible|adjustResize"
+			android:theme="@style/activityTitlebar" android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".ShortReviewEditActivity"
+			android:label="@string/app_name" android:windowSoftInputMode="stateVisible|adjustResize"
+			android:theme="@style/activityTitlebar" android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".MySubjectActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+
+		<activity android:name=".AboutActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".SayActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".MiniBlogActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".GroupActivity" android:label="@string/app_name"
+			android:theme="@style/activityTitlebar" android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".TopicListActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".TopicViewActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".TopicPublishActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".TopicReplyActivity" android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".splashScreen" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+	</application>
+
+
+</manifest> 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:background="#FFF5F5F5"
+	android:orientation="vertical" android:layout_height="fill_parent">
+	<include layout="@layout/titlebar3" />
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/settings" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:scrollbars="vertical"
+		android:padding="2dip" android:background="#FFF5F5F5">
+		<LinearLayout android:orientation="vertical"
+			android:background="@drawable/category_selector"
+			android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+			<TextView android:textColor="@color/black" android:textSize="20dp"
+				android:id="@+id/review_title" android:textStyle="bold"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+			<LinearLayout android:orientation="horizontal"
+				android:paddingLeft="5dip" android:id="@+id/wrapper"
+				android:paddingTop="10dip" android:layout_height="wrap_content"
+				android:layout_width="fill_parent">
+				<ImageView android:id="@+id/user_img"
+					android:layout_width="60dip" android:layout_height="60dip" />
+
+				<LinearLayout android:orientation="vertical"
+					android:paddingLeft="5dip" android:layout_height="wrap_content"
+					android:layout_width="fill_parent">
+					<TextView android:id="@+id/subject_title"
+						android:layout_width="fill_parent" android:textColor="@color/black"
+						android:textSize="15dp" android:layout_height="wrap_content" />
+
+					<TextView android:id="@+id/user_info"
+						android:layout_width="fill_parent" android:textColor="@color/black"
+						android:textSize="15dp" android:layout_height="wrap_content" />
+					<RatingBar android:id="@+id/ratingbar" style="?android:attr/ratingBarStyleSmall"
+						android:layout_marginLeft="5dip" android:layout_width="wrap_content"
+						android:stepSize="0.5" android:isIndicator="true"
+						android:layout_height="wrap_content" android:numStars="5" />
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<TextView android:textColor="@color/black" android:textSize="18dp"
+				android:paddingTop="10dip" android:id="@+id/review_content"
+				android:textStyle="bold" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+
+			<TextView android:textColor="@color/black" android:textSize="17dp"
+				android:paddingTop="10dip" android:id="@+id/review_comments"
+				android:textStyle="bold" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

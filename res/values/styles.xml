@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<style name="TextViewStyleTabMainNav">
+		<item name="android:textSize">12dip</item>
+		<item name="android:textColor">@drawable/tab_main_nav_text_selector
+		</item>
+	</style>
+
+	<style name="CustomWindowTitleBackground">
+		<item name="android:background">@drawable/title_bg_night</item>
+	</style>
+	<style name="activityTitlebar" parent="android:Theme">
+		<item name="android:windowTitleSize">35dip</item>
+		<item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground
+		</item>
+	</style>
+	
+</resources>
+

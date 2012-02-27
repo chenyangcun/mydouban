@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!-- Copyright 2010 Mark Wyszomierski -->
+
+	<!--
+		<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tabMainNav" android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/tab_main_nav_selector"
+		android:padding="12dip" android:gravity="center" > <TextView
+		android:id="@+id/tvTitle" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Title"
+		android:textAppearance="@style/TextViewStyleTabMainNav" />
+
+		</LinearLayout>
+	-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/tabMainNav" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/tab_main_nav_selector"
+	android:gravity="center_horizontal" android:orientation="vertical">
+
+	<ImageView android:id="@+id/ivIcon" android:layout_width="30dip"
+		android:layout_height="30dip" android:scaleType="fitXY"
+		android:layout_marginTop="5dip" android:layout_marginBottom="1dip" />
+
+	<TextView android:id="@+id/tvTitle" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="14dip"
+		android:textAppearance="@style/TextViewStyleTabMainNav"
+		android:layout_marginBottom="5dip" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:background="#FFF5F5F5">
+	<include layout="@layout/titlebar3" />
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:paddingLeft="10dip" android:paddingTop="10dip"
+		android:paddingRight="10dip" android:id="@+id/inner_login"
+		android:paddingBottom="30dip" android:background="#FFF5F5F5">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:background="@drawable/content_bg"
+			android:id="@+id/section1">
+			<TextView android:layout_width="fill_parent" android:text="@string/about_title"
+				android:id="@+id/about_title" android:textColor="@color/black"
+				android:textSize="15dp" android:layout_below="@id/section1"
+				android:textStyle="bold" android:layout_height="wrap_content"></TextView>
+			<RelativeLayout android:layout_width="wrap_content"
+				android:paddingTop="5dip" android:layout_below="@id/about_title"
+				android:layout_height="wrap_content" android:id="@+id/wrapper">
+				<TextView android:layout_width="fill_parent" android:text="@string/about_content"
+					android:id="@+id/about_content" android:textSize="18dp"
+					android:textColor="@color/black" android:layout_below="@id/wrapper"
+					android:layout_height="wrap_content"></TextView>
+
+				<TextView android:layout_width="fill_parent" android:text="@string/about_website"
+					android:autoLink="web" android:textColor="@color/black" android:id="@+id/about_website"
+					android:layout_below="@id/about_content" android:textSize="15dp"
+					android:layout_height="wrap_content"></TextView>
+
+				<TextView android:layout_width="fill_parent" android:text="@string/about_email"
+					android:autoLink="email" android:textColor="@color/black"
+					android:layout_below="@id/about_website" android:textSize="15dp"
+					android:layout_height="wrap_content"></TextView>
+			</RelativeLayout>
+		</RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>

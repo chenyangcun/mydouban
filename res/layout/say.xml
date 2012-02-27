@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  >
+  
+<TextView
+android:id="@+id/say_label"
+android:text="豆瓣说说" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+android:gravity="center"
+android:textSize="24dp"
+>
+</TextView>
+
+<EditText 
+android:text=""
+android:id="@+id/say_edittext" 
+android:layout_width="fill_parent" 
+android:layout_height="150dip"
+android:gravity="top">
+</EditText>
+
+<Button android:text="@string/btnConfirm" 
+	android:id="@+id/say_submit" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+</Button>
+
+
+</LinearLayout>
